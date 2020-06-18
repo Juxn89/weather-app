@@ -1,7 +1,7 @@
 import React from 'react';
-import WeatherTemperature from './weatherTemperature';
-import WeatherExtrainfo from './weatherExtrainfo';
-import { SNOW } from '../constants/weathers';
+import WeatherTemperature from '../weatherData/weatherTemperature';
+import WeatherExtrainfo from '../weatherData/weatherExtrainfo';
+import { SNOW } from '../../constants/weathers';
 
 const WeatherData = () => (
     <div>        
