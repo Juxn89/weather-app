@@ -2,6 +2,7 @@ import React from 'react';
 import WeatherIcons from 'react-weathericons';
 import { CLOUD, CLOUDY, SUN, RAIN, SNOW, WINDY } from '../../constants/weathers';
 import { PropTypes } from 'prop-types';
+import './style.css';
 
 const stateToIconName = weatherState => {
     switch(weatherState) {
@@ -27,7 +28,7 @@ const getWeatherIcon = weatherState => {
 }
 
 const WeatherTemperature = ( {temperature, weatherState} ) => (
-    <div>
+    <div className="weatherTemperatureCont">
         {getWeatherIcon(weatherState)}
         {/* <WeatherIcons name="sleet" size="2x" /> */}
         <span>{`${temperature} C°`}</span>

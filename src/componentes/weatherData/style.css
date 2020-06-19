@@ -1,0 +1,14 @@
+.weatherDataCont {
+    background: cornflowerblue;
+    color: white;
+}
+
+.weatherExtraInfoCont {
+    background: lightcoral;
+    color: white;
+}
+
+.weatherTemperatureCont {
+    background: lightgreen;
+    color: white;
+}
