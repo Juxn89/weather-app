@@ -1,14 +1,18 @@
 .weatherDataCont {
     background: cornflowerblue;
-    color: white;
-}
-
-.weatherExtraInfoCont {
-    background: lightcoral;
-    color: white;
+    height: 100px;
+    line-height: 100px;
+    width: 400px;
 }
 
 .weatherTemperatureCont {
     background: lightgreen;
-    color: white;
+    display: inline-block;
+    width: 60%;
+}
+
+.weatherExtraInfoCont {
+    background: lightcoral;
+    display: inline-block;
+    width: 40%;
 }
