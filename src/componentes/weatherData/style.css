@@ -16,3 +16,19 @@
     display: inline-block;
     width: 40%;
 }
+
+.temperature{
+    color: darkgray;
+    font-size: 30px;
+    font-weight: bold;
+    padding-left: 20px;
+}
+
+.wicon {
+
+}
+
+.temperaturetype {
+    color: lightgray;
+    font-weight: bold;    
+}
