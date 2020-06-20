@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import Location from './locations';
 import WeatherData from './weatherData/index';
-import { SUN } from '../../constants/weathers';
+import { SUN, WINDY } from '../../constants/weathers';
 import './style.css';
 
 const data = {
@@ -11,12 +11,38 @@ const data = {
     wind: '10 m/s'
 }
 
-class WeatherLocation extends Component{
-    render = () => (
-    <div className="weatherLocationCont">
-        <Location city={'Managua'}/>
-        <WeatherData data={data}/>
-    </div>
-)};
+const data2 = {
+    temperature: 18,
+    weatherState: WINDY,
+    humidity: 5,
+    wind: '19 m/s'
+}
+
+class WeatherLocation extends Component {
+
+    constructor() {
+        super();
+        this.state = {
+            city: 'Managua',
+            data: data
+        };
+    }
+
+    handleUpdateClick = () => {
+        this.setState({
+            city: 'Matearea',
+            data: data2
+        });
+    }
+
+    render = () => {
+        const {city, data} = this.state;
+        return (
+            <div className="weatherLocationCont">
+                <Location city={city}/>
+                <WeatherData data={data}/>
+                <button onClick={this.handleUpdateClick}>Actualizar</button>
+            </div>)
+}};
 
 export default WeatherLocation;
